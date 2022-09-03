@@ -1,3 +1,10 @@
+import { LogoContainer, Logo } from "./Header.styled";
 export function Header() {
-  return <div>Header</div>;
+  return (
+    <LogoContainer>
+      Hell
+      <Logo />
+      EN
+    </LogoContainer>
+  );
 }
