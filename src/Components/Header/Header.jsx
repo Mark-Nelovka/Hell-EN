@@ -38,9 +38,15 @@ export function Header() {
                 )
               }
             </Media>
-            <BurgerButton>
-              <BurgerMenu />
-            </BurgerButton>
+            <Media queries={{ desktop: { maxWidth: 1679 } }}>
+              {(matches) =>
+                matches.desktop && (
+                  <BurgerButton>
+                    <BurgerMenu />
+                  </BurgerButton>
+                )
+              }
+            </Media>
           </BurgerContainer>
         </HeaderContainer>
       </Container>

@@ -90,4 +90,7 @@ export const ButtonConsultation = styled.button`
   border: 2px solid var(--active-color);
   cursor: pointer;
   margin-right: 40px;
+  @media screen and (min-width: 1680px) {
+    margin-right: 0;
+  }
 `;
