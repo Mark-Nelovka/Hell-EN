@@ -1,10 +1,35 @@
-import { LogoContainer, Logo } from "./Header.styled";
+import {
+  HeaderSection,
+  HeaderContainer,
+  LogoContainer,
+  LogoName,
+  Logo,
+  LogoTitle,
+  BurgerButton,
+  BurgerContainer,
+  BurgerMenu,
+} from "./Header.styled";
+import { Container } from "../../stylesheet/Container.styled";
 export function Header() {
   return (
-    <LogoContainer>
-      Hell
-      <Logo />
-      EN
-    </LogoContainer>
+    <HeaderSection>
+      <Container>
+        <HeaderContainer>
+          <LogoContainer>
+            <LogoName>
+              Hell
+              <Logo />
+              EN
+            </LogoName>
+            <LogoTitle>Адский английский</LogoTitle>
+          </LogoContainer>
+          <BurgerContainer>
+            <BurgerButton>
+              <BurgerMenu />
+            </BurgerButton>
+          </BurgerContainer>
+        </HeaderContainer>
+      </Container>
+    </HeaderSection>
   );
 }
