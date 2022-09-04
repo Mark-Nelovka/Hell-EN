@@ -54,6 +54,7 @@ export const GlobalStyle = createGlobalStyle`
 
   :root {
     --black: #111518;
+    --white: #ffffff;
     --active-color: #FF6B09;
     --gray: #B9B9B9;
      --baseFont: 'Montserrat', sans-serif;

@@ -18,9 +18,9 @@ import {
 } from "./Header.styled";
 import { Container } from "../../stylesheet/Container.styled";
 export function Header() {
-  const scrollToSection = (e) => {
-    console.log(e.target.id);
-  };
+  // const scrollToSection = (e) => {
+  //   console.log(e.target.id);
+  // };
 
   return (
     <HeaderSection>
@@ -41,7 +41,7 @@ export function Header() {
               matches.desktop && (
                 <MenuContainer>
                   <MenuNavigate>
-                    <MenuList onClick={scrollToSection}>
+                    <MenuList>
                       <MenuItem>
                         <MenuLink id="Program">Программы обучения</MenuLink>
                       </MenuItem>

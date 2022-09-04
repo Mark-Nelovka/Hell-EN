@@ -1,5 +1,5 @@
 import Header from "./Components/Header";
-// import Hero from "./Components/Hero";
+import Hero from "./Components/Hero";
 // import Problem from "./Components/Problem";
 // import Methods from "./Components/Methods";
 // import Program from "./Components/Program";
@@ -13,15 +13,18 @@ export default function App() {
   return (
     <>
       <Header />
-      {/* <Hero />
-      <Problem />
+      <main>
+        <Hero />
+        {/* <Problem />
       <Methods />
       <Program />
       <Teacher />
       <Assurance />
       <Comments />
       <Contacts />
-      <Footer /> */}
+       */}
+      </main>
+      {/* <Footer /> */}
     </>
   );
 }
