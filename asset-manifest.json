@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Hell-EN/static/css/main.58462fbc.css",
-    "main.js": "/Hell-EN/static/js/main.fcb742a3.js",
+    "main.js": "/Hell-EN/static/js/main.8ed3329e.js",
     "static/media/Fire-logo.svg": "/Hell-EN/static/media/Fire-logo.976012cbe9e7b6ca1268da5b7d7250ed.svg",
     "index.html": "/Hell-EN/index.html",
     "static/media/Burger-menu.svg": "/Hell-EN/static/media/Burger-menu.3aecaac6e18c1a67a3add8e99ceda116.svg",
     "main.58462fbc.css.map": "/Hell-EN/static/css/main.58462fbc.css.map",
-    "main.fcb742a3.js.map": "/Hell-EN/static/js/main.fcb742a3.js.map"
+    "main.8ed3329e.js.map": "/Hell-EN/static/js/main.8ed3329e.js.map"
   },
   "entrypoints": [
     "static/css/main.58462fbc.css",
-    "static/js/main.fcb742a3.js"
+    "static/js/main.8ed3329e.js"
   ]
 }
