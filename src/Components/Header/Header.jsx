@@ -10,9 +10,18 @@ import {
   BurgerButton,
   BurgerContainer,
   BurgerMenu,
+  MenuContainer,
+  MenuNavigate,
+  MenuList,
+  MenuItem,
+  MenuLink,
 } from "./Header.styled";
 import { Container } from "../../stylesheet/Container.styled";
 export function Header() {
+  const scrollToSection = (e) => {
+    console.log(e.target.id);
+  };
+
   return (
     <HeaderSection>
       <Container>
@@ -27,7 +36,30 @@ export function Header() {
               <span>Адский</span> английский
             </LogoTitle>
           </LogoContainer>
-
+          <Media queries={{ desktop: { minWidth: 1680 } }}>
+            {(matches) =>
+              matches.desktop && (
+                <MenuContainer>
+                  <MenuNavigate>
+                    <MenuList onClick={scrollToSection}>
+                      <MenuItem>
+                        <MenuLink id="Program">Программы обучения</MenuLink>
+                      </MenuItem>
+                      <MenuItem>
+                        <MenuLink id="AboutUs">О нас</MenuLink>
+                      </MenuItem>
+                      <MenuItem>
+                        <MenuLink id="Methods">Варианты обучения</MenuLink>
+                      </MenuItem>
+                      <MenuItem>
+                        <MenuLink id="Contacts">Контакты</MenuLink>
+                      </MenuItem>
+                    </MenuList>
+                  </MenuNavigate>
+                </MenuContainer>
+              )
+            }
+          </Media>
           <BurgerContainer>
             <Media queries={{ tablet: { minWidth: 768 } }}>
               {(matches) =>

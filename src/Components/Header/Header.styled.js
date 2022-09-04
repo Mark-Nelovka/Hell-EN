@@ -13,6 +13,9 @@ export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* @media screen and (min-width: 1680px) {
+    justify-content: flex-start;
+  } */
 `;
 
 export const LogoContainer = styled.div`
@@ -91,6 +94,34 @@ export const ButtonConsultation = styled.button`
   cursor: pointer;
   margin-right: 40px;
   @media screen and (min-width: 1680px) {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.14em;
     margin-right: 0;
+  }
+`;
+
+export const MenuContainer = styled.div``;
+export const MenuNavigate = styled.nav``;
+export const MenuList = styled.ul`
+  display: flex;
+  align-items: center;
+`;
+export const MenuItem = styled.li`
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+`;
+export const MenuLink = styled.a.attrs((props) => ({
+  href: props.id,
+}))`
+  font-family: var(--baseFont);
+  font-weight: var(--bold);
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: var(--gray);
+  &:hover {
+    color: var(--active-color);
   }
 `;
