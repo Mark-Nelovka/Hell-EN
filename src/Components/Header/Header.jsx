@@ -1,3 +1,4 @@
+import Media from "react-media";
 import {
   HeaderSection,
   HeaderContainer,
@@ -5,6 +6,7 @@ import {
   LogoName,
   Logo,
   LogoTitle,
+  ButtonConsultation,
   BurgerButton,
   BurgerContainer,
   BurgerMenu,
@@ -21,9 +23,21 @@ export function Header() {
               <Logo />
               EN
             </LogoName>
-            <LogoTitle>Адский английский</LogoTitle>
+            <LogoTitle>
+              <span>Адский</span> английский
+            </LogoTitle>
           </LogoContainer>
+
           <BurgerContainer>
+            <Media queries={{ tablet: { minWidth: 768 } }}>
+              {(matches) =>
+                matches.tablet && (
+                  <ButtonConsultation>
+                    Консультация по телефону
+                  </ButtonConsultation>
+                )
+              }
+            </Media>
             <BurgerButton>
               <BurgerMenu />
             </BurgerButton>
