@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import HeroImage from "../../assets/images/Hero-min.png";
-import Line from "../../assets/images/Line-desktop-min.png";
+import Line from "../../assets/images/Line-mobile-min.png";
 
 export const HeroSection = styled.div``;
 
@@ -65,4 +65,6 @@ export const HeroImg = styled.img.attrs({
 
 export const HeroLine = styled.img.attrs({
   src: Line,
-})``;
+})`
+  margin: 0 auto;
+`;

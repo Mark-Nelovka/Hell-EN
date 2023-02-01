@@ -6,7 +6,7 @@ import {
   ButtonForLesson,
   HeroImageContainer,
   HeroImg,
-  // HeroLine,
+  HeroLine,
 } from "./Hero.styled";
 
 import { Container } from "../../stylesheet/Container.styled";
