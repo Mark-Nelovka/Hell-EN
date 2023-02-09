@@ -14,8 +14,55 @@ export function Methods() {
   // likes(["Max", "John", "Mark"]); // "Max, John and Mark like this";
   // likes(["Jacob", "Alex"]); // "Jacob and Alex like this";
   // likes(["Alex", "Jacob", "Mark", "Max"]); // "Alex, Jacob and 2 others like this";
+  // rowSumOddNumbers(42);
+  // getMiddle("test"); // es
+  // getMiddle("testing"); // t
+  // humanReadable(0); // '00:00:00'
+  // humanReadable(59); // '00:00:59'
+  // humanReadable(45296); // '12:34:56'
   return <div>Methods</div>;
 }
+
+// function humanReadable(seconds) {
+//   const hours = Math.floor(seconds / 60);
+//   const qwe = seconds - seconds;
+//   console.log(hours);
+//   return "";
+// }
+
+// function getMiddle(s) {
+//   const length = s.length;
+//   if (length % 2 === 0) {
+//     const word = s[s.length / 2 - 1] + s[s.length / 2];
+//     console.log(word);
+//     return word;
+//   }
+//   const word = s[Math.ceil(length / 2 - 1)];
+//   return word;
+// }
+
+// function rowSumOddNumbers(n) {
+//   const arrWithAllNumbers = [];
+//   const arrWithObjectsSteps = [];
+//   for (let i = 1; i < 10000; i += 1) {
+//     if (i % 2 !== 0) {
+//       arrWithAllNumbers.push(i);
+//     }
+//   }
+//   arrWithAllNumbers.forEach((n, index, array) => {
+//     const number = array.splice(0, index);
+//     if (number.length > 0) {
+//       arrWithObjectsSteps.push({
+//         number,
+//       });
+//     }
+//   });
+//   const result = arrWithObjectsSteps.at(n - 1).number.reduce((acc, num) => {
+//     return (acc += num);
+//   }, 0);
+//   // console.log(n * n * n); // correct
+//   return result;
+// }
 
 // function likes(names) {
 //   const length = names.length;
