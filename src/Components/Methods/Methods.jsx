@@ -17,17 +17,66 @@ export function Methods() {
   // rowSumOddNumbers(42);
   // getMiddle("test"); // es
   // getMiddle("testing"); // t
-  // humanReadable(0); // '00:00:00'
-  // humanReadable(59); // '00:00:59'
-  // humanReadable(45296); // '12:34:56'
+  // findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]); // 5
+  // uniqueInOrder("AAAABBBCCDAABBB"); // ['A','B','C','D','A','B']
+  // solution("camelCasingTest"); // "camel Casing Test";
+  // arrayDiff([1, 2, 2], [1]); // [2, 2]
+
   return <div>Methods</div>;
 }
 
-// function humanReadable(seconds) {
-//   const hours = Math.floor(seconds / 60);
-//   const qwe = seconds - seconds;
-//   console.log(hours);
-//   return "";
+// function arrayDiff(a, b) {
+//   if (a.length === 0 || b.length === 0) {
+//     return [];
+//   }
+//   const res = [];
+//   a.forEach((el) => {
+//     if (!b.includes(el)) {
+//       res.push(el);
+//     }
+//   });
+//   return res;
+// }
+
+// function solution(string) {
+//   if (string.length === 0) {
+//     return string;
+//   }
+//   let result = "";
+//   for (let word of string) {
+//     if (word === word.toLowerCase()) {
+//       result = result + word;
+//     } else {
+//       result = result + " " + word;
+//     }
+//   }
+//   return result;
+// }
+
+// function uniqueInOrder(iterable) {
+//   const arrUnq = [];
+//   let arr = "";
+//   for (let s of iterable) {
+//     if (arr !== s) {
+//       arr = s;
+//       arrUnq.push(s);
+//     }
+//   }
+//   return arrUnq;
+// }
+
+// function findOdd(A) {
+//   const arr = [...A];
+//   let result = null;
+//   A.forEach(() => {
+//     const n = arr.shift();
+//     const countRepeateNumber = A.filter((it) => it === n);
+//     if (countRepeateNumber.length % 2 !== 0) {
+//       result = countRepeateNumber[0];
+//     }
+//   });
+
+//   return result;
 // }
 
 // function getMiddle(s) {
