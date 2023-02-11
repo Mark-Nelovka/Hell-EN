@@ -21,9 +21,63 @@ export function Methods() {
   // uniqueInOrder("AAAABBBCCDAABBB"); // ['A','B','C','D','A','B']
   // solution("camelCasingTest"); // "camel Casing Test";
   // arrayDiff([1, 2, 2], [1]); // [2, 2]
-
+  // findMissingLetter(["a", "b", "c", "d", "f"]); // e
+  // findMissingLetter(["O", "Q", "R", "S"]); // 'P'
+  // solution("abcdef"); // ["ab", "cd", "ef"]
+  // solution("abcdefg"); // ["ab", "cd", "ef", "g_"]
+  // solution(""); // []
   return <div>Methods</div>;
 }
+
+// function solution(str) {
+//   if (str.length === 0) {
+//     return [];
+//   }
+//   const arr = [];
+//   let tempStr = "";
+//   let count = 0;
+//   if (str.length % 2 === 0) {
+//     for (let w of str) {
+//       tempStr += w;
+//       if (tempStr.length === 2) {
+//         arr.push(tempStr);
+//         tempStr = "";
+//       }
+//     }
+//   } else {
+//     for (let w of str) {
+//       tempStr += w;
+//       count += 1;
+//       if (tempStr.length === 2) {
+//         arr.push(tempStr);
+//         tempStr = "";
+//       }
+//       if (count === str.length) {
+//         arr.push(tempStr + "_");
+//         tempStr = "";
+//       }
+//     }
+//   }
+//   return arr;
+// }
+
+// function findMissingLetter(array) {
+//   let result = "";
+//   array
+//     .map((el) => el.charCodeAt(0))
+//     .reduce((acc, n, _, arr) => {
+//       if (n === arr[arr.length - 1]) {
+//         return acc;
+//       }
+//       if (n + 1 !== arr[acc]) {
+//         result = n + 1;
+//         return (acc += 1);
+//       }
+//       return (acc += 1);
+//     }, 1);
+
+//   return String.fromCharCode(result);
+// }
 
 // function arrayDiff(a, b) {
 //   if (a.length === 0 || b.length === 0) {
