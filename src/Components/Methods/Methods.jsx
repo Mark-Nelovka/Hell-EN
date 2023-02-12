@@ -26,8 +26,35 @@ export function Methods() {
   // solution("abcdef"); // ["ab", "cd", "ef"]
   // solution("abcdefg"); // ["ab", "cd", "ef", "g_"]
   // solution(""); // []
+  // deleteNth([20, 37, 20, 21], 1); // [20,37,21]
+  // deleteNth([1, 1, 3, 3, 7, 2, 2, 2, 2], 3); // [1, 1, 3, 3, 7, 2, 2, 2]
+  // order("is2 Thi1s T4est 3a"); // "Thi1s is2 3a T4est"
+  // order("4of Fo1r pe6ople g3ood th5e the2"); // "Fo1r the2 g3ood 4of th5e pe6ople"
   return <div>Methods</div>;
 }
+
+// function order(words) {
+//   if (words === "") {
+//     return "";
+//   }
+//   const number = [];
+//   let str = "";
+// }
+
+// function deleteNth(arr, n) {
+//   let result = [];
+//   for (let num of arr) {
+//     if (!result.includes(num)) {
+//       result.push(num);
+//     } else {
+//       const repeate = result.filter((el) => el === num);
+//       if (repeate.length < n) {
+//         result.push(num);
+//       }
+//     }
+//   }
+//   return result;
+// }
 
 // function solution(str) {
 //   if (str.length === 0) {
