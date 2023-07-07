@@ -27,7 +27,7 @@ export function Hero() {
           <HeroImg />
         </HeroImageContainer>
       </Container>
-      {/* <HeroLine /> */}
+      <HeroLine />
     </HeroSection>
   );
 }
